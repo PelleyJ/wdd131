@@ -96,6 +96,26 @@ main {
     border-radius: 8px;
 }
 
+/* Web Dev Resources list and link styling */
+.card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+    color: var(--hover-bg);
+}
+
 .about-content {
     display: flex;
     flex-direction: column-reverse;
