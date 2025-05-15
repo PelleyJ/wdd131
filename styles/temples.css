@@ -24,7 +24,7 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-/* Hamburger Button */
+/* Hamburger Button (mobile only) */
 #menuBtn {
   display: block;
   font-size: 2rem;
@@ -35,7 +35,7 @@ header h1 {
   margin: 0.5rem auto;
 }
 
-/* Navigation */
+/* Navigation Menu (default hidden on mobile) */
 #navMenu ul {
   display: none;
   flex-direction: column;
@@ -60,7 +60,7 @@ nav a:focus {
   background-color: #6c4fc6;
 }
 
-/* Main */
+/* Main Content */
 main {
   padding: 1rem;
   max-width: 800px;
@@ -68,6 +68,42 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Temple Cards */
+figure {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #eee;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background-color: #3e2a6d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
 }
 
 main h1 {
