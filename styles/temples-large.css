@@ -1,18 +1,19 @@
 @media screen and (min-width: 900px) {
-  /* Hide hamburger in large view */
+  /* Hide hamburger */
   #menuBtn {
     display: none;
   }
 
-  /* Show nav menu horizontally in large view */
+  /* Nav menu horizontal in large view */
   #navMenu ul {
     display: flex !important;
     flex-direction: row;
     justify-content: center;
   }
 
-  /* Grid layout for temples */
+  /* Force 3-column layout */
   main {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
