@@ -83,12 +83,13 @@ nav a:focus {
 
 /* Main Content */
 main {
-  padding: 1rem;
+  padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  justify-items: center;
 }
 
 main h2 {
@@ -100,23 +101,30 @@ main h2 {
 
 /* Temple Cards */
 figure {
+  width: 100%;
+  max-width: 350px;
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 figure img {
   width: 100%;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
   display: block;
 }
 
 figcaption {
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.75rem;
   background-color: #eee;
   font-size: 0.95rem;
+  width: 100%;
 }
 
 /* Footer */

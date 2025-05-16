@@ -4,16 +4,15 @@
     display: none;
   }
 
-  /* Nav menu horizontal in large view */
+  /* Horizontal navigation layout */
   #navMenu ul {
     display: flex !important;
     flex-direction: row;
     justify-content: center;
   }
 
-  /* Force 3-column layout */
+  /* Grid layout for 3 columns */
   main {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
   }
 }
