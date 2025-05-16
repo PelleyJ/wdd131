@@ -1,18 +1,15 @@
 @media screen and (min-width: 900px) {
-  /* Hide hamburger */
   #menuBtn {
     display: none;
   }
 
-  /* Horizontal navigation layout */
   #navMenu ul {
     display: flex !important;
     flex-direction: row;
     justify-content: center;
   }
 
-  /* Grid layout for 3 columns */
-  main {
+  .temple-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
