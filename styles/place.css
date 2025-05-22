@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #d62828;
-  --secondary-color: #007847;
+  --primary-color: #e60026; /* Tokyo tower red */
+  --secondary-color: #002147; /* navy blue for accents */
   --accent-color: #f8f9fa;
   --text-color: #212529;
   --font-body: 'Roboto', sans-serif;
@@ -29,6 +29,8 @@ header {
 .hero img {
   width: 100%;
   height: auto;
+  max-height: 500px;
+  object-fit: cover;
   display: block;
 }
 
@@ -49,9 +51,9 @@ main {
   margin-left: 0.5rem;
 }
 
-.weather img {
-  width: 48px;
+.weather-icon-mobile {
   display: block;
+  width: 48px;
   margin: 0.5rem auto;
 }
 
@@ -63,6 +65,8 @@ footer {
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+
+/* Large View Layout */
 @media screen and (min-width: 900px) {
   main {
     display: grid;
@@ -100,13 +104,8 @@ footer {
     border-radius: 6px 6px 0 0;
   }
 
-  .weather h2::after {
-    content: "⛅";
-    margin-left: 0.5rem;
-  }
-
-  .weather img {
-    display: none; /* hide SVG icon in large view */
+  .weather-icon-mobile {
+    display: none;
   }
 
   footer {
