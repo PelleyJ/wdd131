@@ -49,26 +49,27 @@ const temples = [
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   {
-    templeName: "Tokyo Japan",
-    location: "Tokyo, Japan",
-    dedicated: "1980, October, 27",
-    area: 52000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-lds-673822-wallpaper.jpg"
+   templeName: "Tokyo Japan",
+   location: "Tokyo, Japan",
+   dedicated: "1980, October, 27",
+   area: 52000,
+   imageUrl: "https://media.ldscdn.org/images/media-library/temples/tokyo-japan-temple-lds-673822-wallpaper.jpg"
   },
   {
-    templeName: "Rome Italy",
-    location: "Rome, Italy",
-    dedicated: "2019, March, 10",
-    area: 41000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-temple-lds-1924609-wallpaper.jpg"
+   templeName: "Rome Italy",
+   location: "Rome, Italy",
+   dedicated: "2019, March, 10",
+   area: 41000,
+   imageUrl: "https://media.ldscdn.org/images/media-library/temples/rome-italy-temple-lds-1924609-wallpaper.jpg"
   },
   {
-    templeName: "Paris France",
-    location: "Le Chesnay, France",
-    dedicated: "2017, May, 21",
-    area: 44000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple-lds-2254961-wallpaper.jpg"
+   templeName: "Paris France",
+   location: "Le Chesnay, France",
+   dedicated: "2017, May, 21",
+   area: 44000,
+   imageUrl: "https://media.ldscdn.org/images/media-library/temples/paris-france-temple-lds-2254961-wallpaper.jpg"
   }
+
 ];
 
 const container = document.getElementById("temples");
