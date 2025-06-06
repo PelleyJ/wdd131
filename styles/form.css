@@ -1,53 +1,67 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f4fb;
-  color: #333;
+  background-color: #f9f9fc;
+  color: #222;
 }
 
 main {
   max-width: 600px;
-  margin: auto;
-  padding: 1rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #e9e6ee;
+  border-radius: 10px;
 }
 
 h1 {
   text-align: center;
-  color: #43013f;
+  color: #431049;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: #e0d4e3;
-  padding: 1rem;
-  border-radius: 8px;
 }
 
-fieldset {
-  border: none;
+label,
+legend {
+  font-weight: bold;
 }
 
-label {
-  display: block;
-  margin-bottom: 0.5rem;
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
 }
 
 input[type="submit"] {
+  background-color: #431049;
+  color: #fff;
   padding: 0.75rem;
-  background: #43013f;
-  color: white;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #5e1570;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #43013f;
-  color: white;
   font-size: 0.9rem;
+  background-color: #431049;
+  color: white;
 }

@@ -1,4 +1,3 @@
-// Product Array
 const products = [
   { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
   { id: "fc-2050", name: "power laces", averagerating: 4.7 },
@@ -7,7 +6,6 @@ const products = [
   { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ];
 
-// Populate Product Select Options
 const select = document.getElementById("productName");
 products.forEach(product => {
   const option = document.createElement("option");
@@ -16,5 +14,4 @@ products.forEach(product => {
   select.appendChild(option);
 });
 
-// Update last modified time
 document.getElementById("lastMod").textContent = document.lastModified;
