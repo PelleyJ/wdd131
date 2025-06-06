@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Submitted</title>
+</head>
+<body>
+  <main>
+    <h1>Thank You for Your Review!</h1>
+    <p>You have submitted <span id="reviewCount">0</span> reviews.</p>
+  </main>
+
+  <footer>
+    <p>&copy;2024 🌸 Samuel Pelley 🌸<br>Japan<br>Last Modification: <span id="lastMod"></span></p>
+  </footer>
+
+  <script>
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    count += 1;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("reviewCount").textContent = count;
+
+    // Update footer timestamp
+    document.getElementById("lastMod").textContent = document.lastModified;
+  </script>
+</body>
+</html>
