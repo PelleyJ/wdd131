@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+:root {
+  --primary: #2e3a59;
+  --accent: #4db6ac;
+  --background: #f4f7f8;
+  --text: #1d1f21;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav .nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
