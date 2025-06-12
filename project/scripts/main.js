@@ -18,7 +18,7 @@ const gearData = [
     name: "FIVE Gloves Stunt Evo 2",
     category: "gloves",
     image: "images/gloves1.jpg",
-    description: "Waterproof and thermal-lined for cold-season riding.",
+    description: "Breathable and light weight summer riding glove.",
   },
 ];
 
