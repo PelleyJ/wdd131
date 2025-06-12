@@ -68,3 +68,60 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// ---------- Route Data ----------
+const routes = [
+  {
+    name: "Hakone Turnpike",
+    location: "Kanagawa Prefecture",
+    difficulty: "moderate",
+    image: "images/route-hakone.jpg",
+    description: "A scenic mountain road with smooth curves and amazing Fuji views."
+  },
+  {
+    name: "Mt. Fuji Skyline",
+    location: "Shizuoka Prefecture",
+    difficulty: "easy",
+    image: "images/route-fuji.jpg",
+    description: "Gentle ride with panoramic views of Mt. Fuji and surrounding lakes."
+  },
+  {
+    name: "Izu Skyline",
+    location: "Izu Peninsula",
+    difficulty: "advanced",
+    image: "images/route-izu.jpg",
+    description: "Twist-heavy ride perfect for experienced riders seeking a thrill."
+  }
+];
+
+// ---------- Render Routes ----------
+function renderRoutes() {
+  const routeList = document.getElementById("route-list");
+  if (!routeList) return;
+
+  routes.forEach(route => {
+    const card = document.createElement("div");
+    card.classList.add("route-card");
+
+    card.innerHTML = `
+      <img src="${route.image}" alt="${route.name}" loading="lazy">
+      <h3>${route.name}</h3>
+      <p><strong>Location:</strong> ${route.location}</p>
+      <p><strong>Difficulty:</strong> ${route.difficulty}</p>
+      <p>${route.description}</p>
+    `;
+
+    // Optional: Highlight advanced routes
+    if (route.difficulty === "advanced") {
+      card.style.borderColor = "crimson";
+    }
+
+    routeList.appendChild(card);
+  });
+}
+
+// ---------- Call on Page Load ----------
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.getElementById("route-list")) {
+    renderRoutes();
+  }
+});
